@@ -1,0 +1,2 @@
+Export-Package: test.api
+-buildpath: javax.ws.rs.javax.ws.rs-api

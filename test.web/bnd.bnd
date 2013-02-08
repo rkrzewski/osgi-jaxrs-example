@@ -1,0 +1,7 @@
+-includeresource: static
+-buildpath: osgi.enterprise;version=4.2.0.201003190513,\
+	biz.aQute.bnd.annotation;version=1.52.3.20120717-094352,\
+	javax.servlet-api,\
+	osgi.core;version=4.2.0
+Private-Package: web
+Service-Component: *

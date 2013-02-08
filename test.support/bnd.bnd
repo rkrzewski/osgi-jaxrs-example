@@ -1,0 +1,9 @@
+Service-Component: *
+-buildpath: javax.ws.rs.javax.ws.rs-api,\
+	biz.aQute.bnd.annotation,\
+	jackson-jaxrs,\
+	osgi.core;version=4.2.0,\
+	osgi.cmpn;version=4.2.0.200908310645,\
+	jackson-core-asl
+Private-Package: test.support
+Export-Package: test.support.api
