@@ -2,7 +2,8 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.webconsole)',\
 	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.scr)(version>=1.6.0))',\
 	osgi.identity;filter:='(osgi.identity=test.support)',\
-	osgi.identity;filter:='(osgi.identity=test.web)'
+	osgi.identity;filter:='(osgi.identity=test.web)',\
+	osgi.identity;filter:='(osgi.identity=test.api)'
 -runfw: org.eclipse.osgi;version='[3.7.2.v20120110-1415,3.7.2.v20120110-1415]'
 -runee: JavaSE-1.7
 -runbundles: com.eclipsesource.jaxrs.connector;version='[2.3.0,2.3.1)',\
@@ -28,10 +29,10 @@
 	org.glassfish.jersey.core.jersey-client;version='[2.0.0,2.0.1)',\
 	org.glassfish.jersey.core.jersey-common;version='[2.0.0,2.0.1)',\
 	org.glassfish.jersey.core.jersey-server;version='[2.0.0,2.0.1)',\
+	test.api;version=latest,\
 	test.support;version=latest,\
 	test.web;version=latest
 -buildpath: biz.aQute.bnd.annotation,\
 	test.api;version=latest
 Private-Package: test.impl
 Service-Component: *
-Export-Package: test.api
